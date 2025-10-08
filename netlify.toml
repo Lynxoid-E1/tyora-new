@@ -2,18 +2,11 @@
   command = "npm run build"
   publish = "build"
 
-[context.production.environment]
-  # Set any production environment variables here or in the Netlify UI
-  # Example:
-  # VITE_SUPABASE_PROJECT_ID = "kkpufplzmvaszigezfyf"
-  # VITE_SUPABASE_ANON_KEY = "<ANON_KEY>"
-
-[context.production]
-  command = "npm run build"
-
 [build.environment]
   NODE_ENV = "production"
 
+# Production-only environment variables. It's safer to set secrets in the Netlify UI
+# (Site → Site settings → Build & deploy → Environment) rather than in this file.
 [context.production.environment]
   VITE_SUPABASE_PROJECT_ID = "kkpufplzmvaszigezfyf"
   VITE_SUPABASE_ANON_KEY = "REPLACE_WITH_ANON_KEY"
