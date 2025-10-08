@@ -1,0 +1,31 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://tyora.org/sitemap.xml
+
+# Crawl-delay (optional)
+Crawl-delay: 1
+
+# Specific rules for better SEO
+Allow: /#about
+Allow: /#mission
+Allow: /#tytc
+Allow: /#products
+Allow: /#events
+Allow: /#news
+Allow: /#skillboard
+Allow: /#contact
+Allow: /#faq
+
+# Allow common assets
+Allow: /styles/
+Allow: /images/
+Allow: /assets/
+
+# Block admin or sensitive areas (if any in future)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow search engines to index the main page and all anchor links
+Allow: /
