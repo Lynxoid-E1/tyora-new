@@ -10,3 +10,10 @@
 
 [context.production]
   command = "npm run build"
+
+[build.environment]
+  NODE_ENV = "production"
+
+[context.production.environment]
+  VITE_SUPABASE_PROJECT_ID = "kkpufplzmvaszigezfyf"
+  VITE_SUPABASE_ANON_KEY = "REPLACE_WITH_ANON_KEY"
