@@ -1,5 +1,6 @@
 [build]
-  command = "npm run build"
+  # Skip running a build in Netlify — we ship a ready-to-serve static `build/` folder in the repo
+  command = ""
   publish = "build"
 
 [build.environment]
